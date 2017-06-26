@@ -14,9 +14,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zenhotels/astranet/glog"
-	"github.com/zenhotels/astranet/protocol"
-	"github.com/zenhotels/astranet/skykiss"
+	"github.com/astranet/astranet/glog"
+	"github.com/astranet/astranet/protocol"
+	"github.com/astranet/astranet/skykiss"
 )
 
 var ErrTimeout = errors.New("i/o timeout")

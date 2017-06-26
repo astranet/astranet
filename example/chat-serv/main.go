@@ -5,8 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/zenhotels/astranet"
 	"fmt"
+
+	"github.com/astranet/astranet"
 )
 
 var name = flag.String("name", "anonym", "my name to send messages for")

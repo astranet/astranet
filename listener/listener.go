@@ -7,11 +7,11 @@ import (
 
 	"sync"
 
-	"github.com/zenhotels/astranet/addr"
-	"github.com/zenhotels/astranet/protocol"
-	"github.com/zenhotels/astranet/service"
-	"github.com/zenhotels/astranet/socket"
-	"github.com/zenhotels/astranet/transport"
+	"github.com/astranet/astranet/addr"
+	"github.com/astranet/astranet/protocol"
+	"github.com/astranet/astranet/service"
+	"github.com/astranet/astranet/socket"
+	"github.com/astranet/astranet/transport"
 )
 
 type NewConnRequest struct {

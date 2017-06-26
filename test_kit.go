@@ -10,7 +10,7 @@ import (
 
 	"time"
 
-	"github.com/zenhotels/astranet/skykiss"
+	"github.com/astranet/astranet/skykiss"
 )
 
 type RndReader struct {

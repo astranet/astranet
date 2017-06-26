@@ -7,8 +7,8 @@ import (
 
 	"reflect"
 
-	"github.com/zenhotels/astranet/addr"
-	"github.com/zenhotels/astranet/transport"
+	"github.com/astranet/astranet/addr"
+	"github.com/astranet/astranet/transport"
 )
 
 type ServiceInfo struct {
@@ -95,10 +95,10 @@ func (uniqueHostPort) Reduce(pool []ServiceInfo) []ServiceInfo {
 
 var UniqueHP = uniqueHostPort{}
 
-//go:generate gengen github.com/zenhotels/astranet/registry string ServiceInfo
+//go:generate gengen github.com/astranet/astranet/registry string ServiceInfo
 //go:generate bash -c "ls | xargs -n1 sed -i .bak 's/^package registry/package service/g'"
 
-//go:generate gengen github.com/zenhotels/btree-2d string ServiceInfo
+//go:generate gengen github.com/astranet/btree-2d string ServiceInfo
 //go:generate bash -c "ls | xargs -n1 sed -i .bak 's/^package btree2d/package service/g'"
 
 //go:generate bash -c "rm -f *.bak"

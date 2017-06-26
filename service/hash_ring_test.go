@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zenhotels/astranet/skykiss"
+	"github.com/astranet/astranet/skykiss"
 )
 
 func BenchmarkHashRing(b *testing.B) {

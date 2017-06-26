@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/zenhotels/astranet"
+	"github.com/astranet/astranet"
 )
 
 func echoHandler(conn net.Conn) (n int64, err error) {

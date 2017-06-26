@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zenhotels/astranet/addr"
-	"github.com/zenhotels/astranet/protocol"
-	"github.com/zenhotels/astranet/skykiss"
-	"github.com/zenhotels/astranet/transport"
+	"github.com/astranet/astranet/addr"
+	"github.com/astranet/astranet/protocol"
+	"github.com/astranet/astranet/skykiss"
+	"github.com/astranet/astranet/transport"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zenhotels/astranet/skykiss"
+	"github.com/astranet/astranet/skykiss"
 )
 
 type rCacheKey struct {

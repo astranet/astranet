@@ -3,7 +3,7 @@ package socket
 import (
 	"errors"
 
-	"github.com/zenhotels/astranet/protocol"
+	"github.com/astranet/astranet/protocol"
 )
 
 type ConnState uint8

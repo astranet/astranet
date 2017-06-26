@@ -5,7 +5,7 @@ import (
 
 	"net"
 
-	"github.com/zenhotels/astranet/protocol"
+	"github.com/astranet/astranet/protocol"
 )
 
 type Filter struct {

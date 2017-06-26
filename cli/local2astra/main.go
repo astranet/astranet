@@ -2,24 +2,24 @@
 package main
 
 import (
-)
-import (
 	"flag"
 	"log"
-	"net/http"
 	"net"
-	"os/exec"
+	"net/http"
 	"os"
+	"os/exec"
 	"strconv"
 	"time"
 
-	"github.com/zenhotels/btree-2d/uuid"
-	"github.com/zenhotels/astranet"
+	"github.com/astranet/astranet"
+	"github.com/astranet/btree-2d/uuid"
 	"github.com/vulcand/oxy/forward"
+
 	"fmt"
 	"os/signal"
-	"syscall"
 	"strings"
+	"syscall"
+
 	"github.com/vulcand/oxy/testutils"
 )
 

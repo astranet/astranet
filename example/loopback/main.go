@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/zenhotels/astranet"
+	"github.com/astranet/astranet"
 )
 
 func main() {

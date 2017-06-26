@@ -5,8 +5,8 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/zenhotels/astranet"
-	"github.com/zenhotels/astranet/service"
+	"github.com/astranet/astranet"
+	"github.com/astranet/astranet/service"
 )
 
 var astraNet = astranet.New().Client()

@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/astranet/astranet"
 	"github.com/julienschmidt/httprouter"
-	"github.com/zenhotels/astranet"
 )
 
 var astraNet = astranet.New().Router()

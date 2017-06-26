@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/zenhotels/astranet.svg?branch=master)](https://travis-ci.org/zenhotels/astranet)
 # AstraNet
 
 `astranet` is a package for managing highly concurrent independent network streams.

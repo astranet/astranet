@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/zenhotels/astranet/addr"
-	"github.com/zenhotels/astranet/transport"
+	"github.com/astranet/astranet/addr"
+	"github.com/astranet/astranet/transport"
 )
 
 type RouteInfo struct {
@@ -86,10 +86,10 @@ func init() {
 	}
 }
 
-//go:generate gengen github.com/zenhotels/astranet/registry uint64 RouteInfo
+//go:generate gengen github.com/astranet/astranet/registry uint64 RouteInfo
 //go:generate bash -c "ls | xargs -n1 sed -i .bak 's/^package registry/package route/g'"
 
-//go:generate gengen github.com/zenhotels/btree-2d uint64 RouteInfo
+//go:generate gengen github.com/astranet/btree-2d uint64 RouteInfo
 //go:generate bash -c "ls | xargs -n1 sed -i .bak 's/^package btree2d/package route/g'"
 
 //go:generate bash -c "rm -f *.bak"

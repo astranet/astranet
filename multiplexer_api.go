@@ -5,9 +5,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/zenhotels/astranet/protocol"
-	"github.com/zenhotels/astranet/route"
-	"github.com/zenhotels/astranet/service"
+	"github.com/astranet/astranet/protocol"
+	"github.com/astranet/astranet/route"
+	"github.com/astranet/astranet/service"
 )
 
 type AstraNet interface {

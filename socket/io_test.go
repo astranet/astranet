@@ -10,9 +10,9 @@ import (
 
 	"os"
 
-	"github.com/zenhotels/astranet/glog"
-	"github.com/zenhotels/astranet/skykiss"
-	"github.com/zenhotels/astranet/transport"
+	"github.com/astranet/astranet/glog"
+	"github.com/astranet/astranet/skykiss"
+	"github.com/astranet/astranet/transport"
 )
 
 func TestUpstreamClose(t *testing.T) {

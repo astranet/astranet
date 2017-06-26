@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/zenhotels/astranet/addr"
-	"github.com/zenhotels/astranet/skykiss"
+	"github.com/astranet/astranet/addr"
+	"github.com/astranet/astranet/skykiss"
 )
 
 type Command uint8

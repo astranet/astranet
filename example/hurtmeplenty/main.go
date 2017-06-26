@@ -13,9 +13,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rcrowley/go-metrics"
-	"github.com/zenhotels/astranet"
 	"flag"
+
+	"github.com/astranet/astranet"
+	"github.com/rcrowley/go-metrics"
 )
 
 var astraNet = astranet.New()

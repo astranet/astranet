@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/zenhotels/astranet/protocol"
+	"github.com/astranet/astranet/protocol"
 )
 
 type Router struct {
