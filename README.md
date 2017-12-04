@@ -2,6 +2,11 @@
 
 `astranet` is a package for managing highly concurrent independent network streams.
 
+## Authors
+
+1. https://github.com/biinilya
+2. https://github.com/xlab
+
 ## How did we get here
 
 While dealing with everyday issues we have approached a situation when we need a huge amount of simultaneous independent data streams between two group of machines. The number was much higher than the standard TCP stack allows to have, even with sys limits tweaked in the right way.
