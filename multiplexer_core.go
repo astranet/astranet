@@ -704,25 +704,26 @@ func (mpx *multiplexer) join(network, address string) error {
 }
 
 func (mpx *multiplexer) Join(network, address string) error {
-	var host, port, _ = net.SplitHostPort(address)
-	var addrList, lookupErr = net.LookupHost(host)
 	var joinAll = func(host, port string) {
-		ipAddrList, _ := net.LookupHost(host)
-		for _, ipAddr := range ipAddrList {
-			_ = mpx.join(network, net.JoinHostPort(ipAddr, port))
+		var addrList, lookupErr = net.LookupHost(host)
+		if lookupErr == nil && len(addrList) > 0 {
+			for _, ipAddr := range addrList {
+				_ = mpx.join(network, net.JoinHostPort(ipAddr, port))
+			}
+		} else {
+			_ = mpx.join(network, address)
 		}
 	}
-	if lookupErr == nil && len(addrList) > 0 {
-		joinAll(host, port)
-		var resolveTimer = time.NewTicker(time.Second*10)
-		go func(host, port string) {
-			for range resolveTimer.C {
-				joinAll(host, port)
-			}
-		}(host, port)
-	} else {
-		return mpx.join(network, address)
-	}
+
+	var resolveTimer = time.NewTicker(time.Second*10)
+	var host, port, _ = net.SplitHostPort(address)
+	joinAll(host, port)
+	go func(host, port string) {
+		for range resolveTimer.C {
+			joinAll(host, port)
+		}
+	}(host, port)
+
 	return nil
 }
 
