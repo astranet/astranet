@@ -727,6 +727,18 @@ func (mpx *multiplexer) Join(network, address string) error {
 	return nil
 }
 
+	var resolveTimer = time.NewTicker(time.Second*10)
+	var host, port, _ = net.SplitHostPort(address)
+	joinAll(host, port)
+	go func(host, port string) {
+		for range resolveTimer.C {
+			joinAll(host, port)
+		}
+	}(host, port)
+
+	return nil
+}
+
 func (mpx *multiplexer) findRouteTimeout(remote uint64, distance int, t time.Duration) (r transport.Transport) {
 	if s, ok := mpx.routes.DiscoverTimeout(route.RndDistSelector{}, remote, t, nil); ok && s.Distance <= distance {
 		r = s.Upstream
